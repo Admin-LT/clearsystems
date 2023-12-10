@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Naujienos on IT, kuris padeda dirbti</title>
+    <link>https://admin.lt/</link>
+    <description>Recent content in Naujienos on IT, kuris padeda dirbti</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>lt-lt</language>
+    <lastBuildDate>Sun, 10 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://admin.lt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Administravimo paslaugos</title>
+      <link>https://admin.lt/administravimo-paslaugos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://admin.lt/administravimo-paslaugos/</guid>
+      <description># Kompiuterinės infrastruktūros auditas Surinksime visą informaciją apie jūsų kompiuterių ūkį. Ataskaitą pateiksime jums patogiu formatu. Pridėsime rekomendacijas, ką daryti su turima įranga.
+# Tinklo infrastruktūros auditas Surinksime visą informaciją apie jūsų tinklo įrangą. Nupiešime tinklo infrastruktūros schemą. Ataskaitą pateiksime jums patogiu formatu.
+# Infrastruktūros stebėjimas (monitoring) Sprendimas1: jūsu arba mūsų infrastruktūroje paleidžiame monitoringo sistema, sudedame įrangą kuria reikia stebėti. Sukonfigūruojame pranešimų sistemą.
+Sprendimas2: savo infrastruktūroje susidedame jūsų įrangą. Suderiname ir nustatome pranešimų siuntimą.</description>
+    </item>
+    <item>
+      <title>Duomenų centro paslaugos</title>
+      <link>https://admin.lt/duomenu-centro-paslaugos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://admin.lt/duomenu-centro-paslaugos/</guid>
+      <description># Fizinių serverių nuoma # Virtualių serverių nuoma </description>
+    </item>
+    <item>
+      <title>Elektorinio pašto (email) migravimas</title>
+      <link>https://admin.lt/sprendimai/elektroninio-pasto-migravimas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://admin.lt/sprendimai/elektroninio-pasto-migravimas/</guid>
+      <description>(daromas aprašymas)</description>
+    </item>
+    <item>
+      <title>Serverių paslaugos</title>
+      <link>https://admin.lt/serveriu-paslaugos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://admin.lt/serveriu-paslaugos/</guid>
+      <description># Fizinių ir virtualių serverių auditas ir rekomandacijos # Privati failų saugykla (Nextcloud) # Privatus web serveris # Privati duomenų bazė # Privatus pašto serveris # Privatus apskaitos serveris (Rivilė, InvoiceNinja) # Privati failų versijavimo repozitorija (GitLab) # Privatus žurnalų (logs) serveris (ELK, Graylog2, Loki) # Dedikuotas kubernetes (rke, rancher) </description>
+    </item>
+  </channel>
+</rss>
