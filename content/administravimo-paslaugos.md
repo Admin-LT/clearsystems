@@ -12,7 +12,7 @@ Surinksime visą informaciją apie jūsų tinklo įrangą. Nupiešime tinklo inf
 
 ### \# Infrastruktūros stebėjimas  (monitoring)
 
-Sprendimas1: jūsu arba mūsų infrastruktūroje paleidžiame monitoringo sistema, sudedame įrangą kuria reikia stebėti. Sukonfigūruojame pranešimų sistemą.\
+Sprendimas1: jūsų arba mūsų infrastruktūroje paleidžiame monitoringo sistemą, sudedame įrangą, kurią reikia stebėti. Sukonfigūruojame pranešimų sistemą.\
 \
 Sprendimas2: savo infrastruktūroje susidedame jūsų įrangą. Suderiname ir nustatome pranešimų siuntimą.
 

@@ -13,10 +13,7 @@
       <link>https://admin.lt/administravimo-paslaugos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://admin.lt/administravimo-paslaugos/</guid>
-      <description># Kompiuterinės infrastruktūros auditas Surinksime visą informaciją apie jūsų kompiuterių ūkį. Ataskaitą pateiksime jums patogiu formatu. Pridėsime rekomendacijas, ką daryti su turima įranga.
-# Tinklo infrastruktūros auditas Surinksime visą informaciją apie jūsų tinklo įrangą. Nupiešime tinklo infrastruktūros schemą. Ataskaitą pateiksime jums patogiu formatu.
-# Infrastruktūros stebėjimas (monitoring) Sprendimas1: jūsu arba mūsų infrastruktūroje paleidžiame monitoringo sistema, sudedame įrangą kuria reikia stebėti. Sukonfigūruojame pranešimų sistemą.
-Sprendimas2: savo infrastruktūroje susidedame jūsų įrangą. Suderiname ir nustatome pranešimų siuntimą.</description>
+      <description># Kompiuterinės infrastruktūros auditas Surinksime visą informaciją apie jūsų kompiuterių ūkį. Ataskaitą pateiksime jums patogiu formatu. Pridėsime rekomendacijas, ką daryti su turima įranga.&#xA;# Tinklo infrastruktūros auditas Surinksime visą informaciją apie jūsų tinklo įrangą. Nupiešime tinklo infrastruktūros schemą. Ataskaitą pateiksime jums patogiu formatu.&#xA;# Infrastruktūros stebėjimas (monitoring) Sprendimas1: jūsų arba mūsų infrastruktūroje paleidžiame monitoringo sistemą, sudedame įrangą, kurią reikia stebėti. Sukonfigūruojame pranešimų sistemą.&#xA;Sprendimas2: savo infrastruktūroje susidedame jūsų įrangą. Suderiname ir nustatome pranešimų siuntimą.</description>
     </item>
     <item>
       <title>Duomenų centro paslaugos</title>
@@ -26,7 +23,7 @@ Sprendimas2: savo infrastruktūroje susidedame jūsų įrangą. Suderiname ir nu
       <description># Fizinių serverių nuoma # Virtualių serverių nuoma </description>
     </item>
     <item>
-      <title>Elektorinio pašto (email) migravimas</title>
+      <title>Elektroninio pašto (email) migravimas</title>
       <link>https://admin.lt/sprendimai/elektroninio-pasto-migravimas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://admin.lt/sprendimai/elektroninio-pasto-migravimas/</guid>

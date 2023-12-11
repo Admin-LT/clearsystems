@@ -1,5 +1,5 @@
 ---
-title: Elektorinio pašto (email) migravimas
+title: Elektroninio pašto (email) migravimas
 ---
 
 (daromas aprašymas)
