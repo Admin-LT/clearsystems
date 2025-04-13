@@ -1,0 +1,109 @@
+<h1 id="skyrius-perėjimas-nuo-programuotojo-prie-architekto">3 skyrius: Perėjimas nuo programuotojo prie architekto</h1>
+<h2 id="kodėl-programuotojams-sunku-tapti-architektais">Kodėl programuotojams sunku tapti architektais</h2>
+<p>Perėjimas nuo programuotojo prie architekto yra vienas sudėtingiausių karjeros šuolių programinės įrangos kūrimo srityje. Tai ne tik pareigų ar atsakomybių pokytis – tai fundamentalus mąstymo būdo pasikeitimas, kuris reikalauja visiškai kitokio požiūrio į problemas ir jų sprendimus.</p>
+<p>Programuotojams dažnai sunku tapti architektais dėl kelių esminių priežasčių:</p>
+<p><strong>1. Detalių vs. visumos mąstymas</strong></p>
+<p>Programuotojai įpratę gilintis į detales – kodo eilutes, algoritmus, funkcijas. Jie tobulina savo gebėjimą spręsti konkrečias, apibrėžtas problemas. Jų sėkmė dažnai matuojama gebėjimu efektyviai įgyvendinti sprendimus kode.</p>
+<p>Architektai, priešingai, turi matyti visumą – kaip skirtingos sistemos dalys sąveikauja tarpusavyje, kaip sistema atitinka verslo poreikius, kaip ji evoliucionuos laikui bėgant. Jie turi atsitraukti nuo detalių ir matyti platesnį vaizdą.</p>
+<p><strong>2. Techninės vs. socialinės problemos</strong></p>
+<p>Programuotojai daugiausia sprendžia technines problemas – kaip efektyviai įgyvendinti algoritmą, kaip optimizuoti užklausą, kaip pašalinti klaidą. Šios problemos dažniausiai turi objektyvius, išmatuojamus sprendimus.</p>
+<p>Architektai susiduria su problemomis, kurios yra tiek techninės, tiek socialinės – kaip suderinti skirtingų komandų poreikius, kaip komunikuoti sudėtingus sprendimus nespecialistams, kaip įvertinti ilgalaikius kompromisus. Šios problemos retai turi vieną teisingą atsakymą.</p>
+<p><strong>3. Įgyvendinimas vs. projektavimas</strong></p>
+<p>Programuotojai įpratę įgyvendinti – jie paima reikalavimus ir paverčia juos veikiančiu kodu. Jų darbas yra konkretus ir apčiuopiamas.</p>
+<p>Architektai turi projektuoti – jie kuria abstrakcijas, modelius ir principus, kurie vėliau bus įgyvendinti kitų. Jų darbas yra abstraktesnis ir mažiau apčiuopiamas, o rezultatai dažnai matomi tik po ilgo laiko.</p>
+<p><strong>4. Asmeninė vs. kolektyvinė atsakomybė</strong></p>
+<p>Programuotojai dažnai atsakingi už savo kodo kokybę ir funkcionalumą. Jie gali kontroliuoti savo darbo rezultatus ir matyti tiesioginį ryšį tarp savo pastangų ir rezultatų.</p>
+<p>Architektai atsakingi už visos sistemos kokybę ir funkcionalumą, bet jie negali tiesiogiai kontroliuoti visų įgyvendinimo aspektų. Jų sėkmė priklauso nuo gebėjimo įtikinti, mokyti ir įgalinti kitus.</p>
+<h2 id="mąstymo-pokytis-nuo-detalių-prie-visumos">Mąstymo pokytis: nuo detalių prie visumos</h2>
+<p>Perėjimas nuo programuotojo prie architekto reikalauja fundamentalaus mąstymo pokyčio – nuo detalių prie visumos. Šis pokytis nėra lengvas ar automatiškas; jis reikalauja sąmoningo pastangų ir praktikos.</p>
+<p><strong>Programuotojo mąstymas:</strong> - Fokusuojasi į konkrečias problemas ir jų sprendimus - Vertina efektyvumą ir elegancija kodo lygmenyje - Mato sistemą iš vidaus, kaip komponentų rinkinį - Siekia tobulinti atskiras dalis</p>
+<p><strong>Architekto mąstymas:</strong> - Fokusuojasi į sistemos tikslus ir apribojimus - Vertina aiškumą ir lankstumą sistemos lygmenyje - Mato sistemą iš išorės, kaip visumą - Siekia optimizuoti visą sistemą, net jei tai reiškia suboptimalias dalis</p>
+<p>Šis mąstymo pokytis reikalauja naujo požiūrio į problemas:</p>
+<p><strong>1. Konteksto suvokimas</strong></p>
+<p>Architektai turi suprasti platesnį kontekstą, kuriame veikia sistema – verslo tikslus, naudotojų poreikius, organizacinius apribojimus. Jie turi matyti, kaip techniniai sprendimai siejasi su šiuo kontekstu.</p>
+<p><strong>2. Kompromisų vertinimas</strong></p>
+<p>Architektai turi suprasti, kad kiekvienas sprendimas turi privalumų ir trūkumų. Jie turi gebėti įvertinti šiuos kompromisus ir priimti sprendimus, kurie geriausiai atitinka sistemos tikslus ir apribojimus.</p>
+<p><strong>3. Ilgalaikis mąstymas</strong></p>
+<p>Architektai turi galvoti apie ilgalaikę sistemos evoliuciją – kaip ji keisis laikui bėgant, kokius iššūkius ji gali susidurti ateityje, kaip ji prisitaikys prie besikeičiančių reikalavimų.</p>
+<p><strong>4. Abstrakcijų kūrimas</strong></p>
+<p>Architektai turi kurti abstrakcijas, kurios padeda suvaldyti sistemos sudėtingumą – modelius, principus, šablonus, kurie padeda suprasti ir komunikuoti sistemos struktūrą ir elgseną.</p>
+<h2 id="kodo-rašymo-vs.-sistemos-kūrimo-skirtumai">Kodo rašymo vs. sistemos kūrimo skirtumai</h2>
+<p>Kodo rašymas ir sistemos kūrimas yra du skirtingi procesai, reikalaujantys skirtingų įgūdžių ir požiūrių. Programuotojai fokusuojasi į kodo rašymą, architektai – į sistemos kūrimą.</p>
+<p><strong>Kodo rašymas:</strong> - Fokusuojasi į konkrečias implementacijas - Vertina efektyvumą, teisingumą, skaitomumą - Remiasi algoritmais, duomenų struktūromis, programavimo kalbos ypatumais - Rezultatas yra veikiantis kodas</p>
+<p><strong>Sistemos kūrimas:</strong> - Fokusuojasi į abstrakcijas ir modelius - Vertina aiškumą, lankstumą, plečiamumą - Remiasi architektūriniais šablonais, principais, gerosiomis praktikomis - Rezultatas yra struktūra, kuri vadovauja kodo rašymui</p>
+<p>Šie skirtumai pasireiškia įvairiose srityse:</p>
+<p><strong>1. Problemų apibrėžimas</strong></p>
+<p>Programuotojai dažniausiai dirba su jau apibrėžtomis problemomis – jiems pateikiami reikalavimai, kuriuos jie turi įgyvendinti.</p>
+<p>Architektai dažnai dalyvauja problemų apibrėžime – jie padeda identifikuoti, kokias problemas sistema turėtų spręsti ir kaip jos turėtų būti sprendžiamos.</p>
+<p><strong>2. Sprendimų vertinimas</strong></p>
+<p>Programuotojai vertina sprendimus pagal jų efektyvumą, teisingumą ir skaitomumą – ar kodas veikia teisingai, ar jis efektyviai naudoja resursus, ar jį lengva suprasti ir palaikyti.</p>
+<p>Architektai vertina sprendimus pagal jų atitikimą sistemos tikslams ir apribojimams – ar sprendimas padeda pasiekti verslo tikslus, ar jis atitinka naudotojų poreikius, ar jis suderinamas su kitomis sistemos dalimis.</p>
+<p><strong>3. Komunikacija</strong></p>
+<p>Programuotojai daugiausia komunikuoja su kitais programuotojais, naudodami techninę kalbą ir koncepcijas.</p>
+<p>Architektai turi komunikuoti su įvairiais suinteresuotais asmenimis – programuotojais, vadovais, klientais, naudotojais – ir pritaikyti savo komunikaciją prie auditorijos.</p>
+<p><strong>4. Atsakomybė</strong></p>
+<p>Programuotojai atsakingi už savo kodo kokybę ir funkcionalumą.</p>
+<p>Architektai atsakingi už visos sistemos kokybę ir funkcionalumą, įskaitant aspektus, kurie peržengia kodo ribas – diegimą, palaikymą, evoliuciją.</p>
+<h2 id="architektūrinis-mąstymas-kasdieniniame-darbe">Architektūrinis mąstymas kasdieniniame darbe</h2>
+<p>Architektūrinis mąstymas nėra rezervuotas tik tiems, kurie turi architekto titulą. Tai mąstymo būdas, kurį gali ir turėtų praktikuoti kiekvienas programuotojas, siekiantis tobulėti ir augti.</p>
+<p>Štai kaip galima integruoti architektūrinį mąstymą į kasdieninį darbą:</p>
+<p><strong>1. Užduok “kodėl” klausimus</strong></p>
+<p>Prieš pradėdamas įgyvendinti sprendimą, paklausk savęs: kodėl šis sprendimas yra tinkamas? Kodėl mes sprendžiame šią problemą būtent šiuo būdu? Kodėl mes naudojame šią technologiją ar šabloną?</p>
+<p>Šie klausimai padeda suprasti platesnį kontekstą ir priežastis, slypinčias už techninių sprendimų.</p>
+<p><strong>2. Galvok apie sąsajas, ne tik implementacijas</strong></p>
+<p>Kai kuri naują funkcionalumą, galvok ne tik apie tai, kaip jį įgyvendinti, bet ir apie tai, kaip jis sąveikauja su kitomis sistemos dalimis. Kokie yra sąsajos taškai? Kokie yra priklausomybės ryšiai?</p>
+<p>Šis požiūris padeda kurti modulines, lengvai keičiamas sistemas.</p>
+<p><strong>3. Dokumentuok sprendimus ir jų priežastis</strong></p>
+<p>Kai priimi svarbų sprendimą, dokumentuok ne tik patį sprendimą, bet ir priežastis, kodėl jį priėmei. Kokie buvo alternatyvūs sprendimai? Kodėl pasirinktas būtent šis?</p>
+<p>Ši praktika padeda kitiems (ir tau pačiam ateityje) suprasti mąstymo procesą ir kontekstą, kuriame buvo priimtas sprendimas.</p>
+<p><strong>4. Ieškok šablonų ir abstrakcijų</strong></p>
+<p>Kai susiduri su panašiomis problemomis skirtingose sistemos dalyse, ieškok bendrų šablonų ir abstrakcijų, kurios galėtų būti pritaikytos visur. Kaip galėtum apibendrinti sprendimą, kad jis būtų universalesnis?</p>
+<p>Šis požiūris padeda kurti nuoseklias, lengvai suprantamas sistemas.</p>
+<p><strong>5. Galvok apie evoliuciją</strong></p>
+<p>Kai kuri naują funkcionalumą, galvok ne tik apie dabartinius reikalavimus, bet ir apie tai, kaip jie gali keistis ateityje. Kaip sistema prisitaikys prie šių pokyčių?</p>
+<p>Šis požiūris padeda kurti lankstesnes, ilgaamžiškesnes sistemas.</p>
+<h2 id="praktiniai-žingsniai-pereinant-nuo-kodo-prie-architektūros">Praktiniai žingsniai pereinant nuo kodo prie architektūros</h2>
+<p>Perėjimas nuo programuotojo prie architekto nėra vienkartinis įvykis, o laipsniškas procesas, reikalaujantis nuolatinio mokymosi ir praktikos. Štai praktiniai žingsniai, kurie gali padėti šiame kelyje:</p>
+<p><strong>1. Išplėsk savo žinių bazę</strong></p>
+<p>Architektai turi turėti platų žinių spektrą – ne tik apie konkrečias technologijas, bet ir apie architektūrinius principus, šablonus, geriausias praktikas. Skaityk knygas, straipsnius, lankyk konferencijas, mokykis iš kitų architektų.</p>
+<p><strong>2. Siek platesnių atsakomybių</strong></p>
+<p>Ieškok galimybių prisiimti daugiau atsakomybės savo dabartiniame darbe – vadovauk projektui, mentoriauk jaunesniems programuotojams, dalyvauk architektūriniuose sprendimuose.</p>
+<p><strong>3. Praktikuok sisteminį mąstymą</strong></p>
+<p>Pratinkis matyti sistemas kaip visumą, ne tik kaip atskirų dalių rinkinį. Analizuok, kaip skirtingos dalys sąveikauja tarpusavyje, kokie yra jų priklausomybės ryšiai, kaip pokyčiai vienoje dalyje gali paveikti kitas.</p>
+<p><strong>4. Tobulink komunikacijos įgūdžius</strong></p>
+<p>Architektai turi gebėti efektyviai komunikuoti su įvairiais suinteresuotais asmenimis. Tobulink savo gebėjimą aiškiai ir suprantamai perteikti sudėtingas technines koncepcijas, pritaikant komunikaciją prie auditorijos.</p>
+<p><strong>5. Mokykis iš esamų sistemų</strong></p>
+<p>Analizuok esamas sistemas – tiek tas, su kuriomis dirbi, tiek atviro kodo projektus. Kokia yra jų architektūra? Kokie principai ir šablonai naudojami? Kas veikia gerai, o kas galėtų būti tobulinama?</p>
+<p><strong>6. Klausk patarimų</strong></p>
+<p>Ieškok mentorių – patyrusių architektų, kurie galėtų pasidalinti savo patirtimi ir patarimais. Klausk jų apie iššūkius, su kuriais jie susidūrė, ir kaip juos įveikė.</p>
+<p><strong>7. Praktikuok architektūrinius sprendimus</strong></p>
+<p>Pradėk nuo mažų architektūrinių sprendimų savo darbe – kaip struktūrizuoti naują funkcionalumą, kokius šablonus naudoti, kaip apibrėžti sąsajas. Reflektuok apie šiuos sprendimus ir mokykis iš jų.</p>
+<p><strong>8. Dokumentuok ir pristatyk</strong></p>
+<p>Praktikuok architektūrinių sprendimų dokumentavimą ir pristatymą. Kaip aiškiai perteikti sprendimo esmę? Kaip pagrįsti jo privalumus? Kaip atsakyti į klausimus ir kritiką?</p>
+<h2 id="dažniausios-klaidos-ir-kaip-jų-išvengti">Dažniausios klaidos ir kaip jų išvengti</h2>
+<p>Pereinant nuo programuotojo prie architekto, dažnai susiduriama su tam tikromis klaidomis. Štai dažniausios iš jų ir patarimai, kaip jų išvengti:</p>
+<p><strong>1. Per didelis fokusavimasis į technologijas</strong></p>
+<p>Daugelis programuotojų, tapusių architektais, pernelyg fokusuojasi į technologijas – naujausius frameworks, bibliotekas, įrankius. Jie mano, kad architekto darbas yra pasirinkti “teisingas” technologijas.</p>
+<p><strong>Kaip išvengti:</strong> Suprask, kad architektūra yra daugiau nei technologijų pasirinkimas. Ji apima sistemos struktūrą, komponentų sąveiką, evoliucijos strategijas. Technologijos yra tik įrankiai šiems tikslams pasiekti.</p>
+<p><strong>2. Abstrakčių sprendimų kūrimas be praktinio patyrimo</strong></p>
+<p>Kai kurie nauji architektai kuria abstrakčius, teorinius sprendimus, neturinčius praktinio pagrindo. Jie remiasi knygomis ir straipsniais, bet neturi praktinės patirties su siūlomais sprendimais.</p>
+<p><strong>Kaip išvengti:</strong> Remkis praktine patirtimi. Jei siūlai sprendimą, įsitikink, kad supranti, kaip jis veiks praktikoje. Jei neturi patirties su konkrečiu sprendimu, eksperimentuok su juo mažesniu masteliu prieš siūlydamas jį visai sistemai.</p>
+<p><strong>3. Nepakankama komunikacija</strong></p>
+<p>Daugelis naujų architektų nepakankamai komunikuoja savo sprendimus ir jų priežastis. Jie mano, kad geras sprendimas “kalba pats už save” ir nereikalauja paaiškinimų.</p>
+<p><strong>Kaip išvengti:</strong> Investuok į komunikaciją. Aiškiai dokumentuok ir pristatyk savo sprendimus, jų priežastis ir kompromisus. Pritaikyk savo komunikaciją prie auditorijos – programuotojams gali reikėti techninių detalių, vadovams – verslo naudos.</p>
+<p><strong>4. Pernelyg sudėtingi sprendimai</strong></p>
+<p>Nauji architektai dažnai kuria pernelyg sudėtingus sprendimus, siekdami įrodyti savo kompetenciją ar pasiruošti visiems įmanomiems scenarijams.</p>
+<p><strong>Kaip išvengti:</strong> Siek paprastumo. Pradėk nuo paprasčiausio sprendimo, kuris išsprendžia problemą, ir pridėk sudėtingumo tik tada, kai tai būtina. Prisimink, kad kiekvienas sudėtingumo lygis turi savo kainą palaikomumo ir suprantamumo prasme.</p>
+<p><strong>5. Ignoravimas praktinių apribojimų</strong></p>
+<p>Kai kurie architektai ignoruoja praktinius apribojimus – laiko, resursų, komandos įgūdžių. Jie kuria “idealias” architektūras, kurios negali būti įgyvendintos esamomis sąlygomis.</p>
+<p><strong>Kaip išvengti:</strong> Būk realistiškas. Suprask praktinius apribojimus ir kurk sprendimus, kurie gali būti įgyvendinti šiomis sąlygomis. Geriau turėti “pakankamai gerą” architektūrą, kuri veikia, nei “tobulą” architektūrą, kuri niekada nebus įgyvendinta.</p>
+<p><strong>6. Nenoras priimti kompromisus</strong></p>
+<p>Architektūra yra kompromisų menas, bet daugelis naujų architektų nenori pripažinti, kad tobulų sprendimų nėra. Jie siekia “teisingo” sprendimo, kuris neturi jokių trūkumų.</p>
+<p><strong>Kaip išvengti:</strong> Pripažink, kad kiekvienas sprendimas turi privalumų ir trūkumų. Aiškiai įvardink šiuos kompromisus ir pagrįsk, kodėl pasirinktas kompromisas yra tinkamas konkrečioje situacijoje.</p>
+<p><strong>7. Pernelyg didelis pasitikėjimas teorija</strong></p>
+<p>Kai kurie architektai pernelyg pasitiki teoriniais modeliais ir šablonais, neatsižvelgdami į konkrečią situaciją ir kontekstą.</p>
+<p><strong>Kaip išvengti:</strong> Suprask, kad teorija yra tik pradžios taškas. Kiekviena situacija yra unikali ir reikalauja pritaikyto sprendimo. Naudok teorinius modelius kaip įrankius, bet ne kaip dogmas.</p>
+<p><strong>8. Baimė keisti kursą</strong></p>
+<p>Kai kurie architektai, priėmę sprendimą, nenori jo keisti, net jei paaiškėja, kad jis nėra optimalus. Jie bijo prarasti autoritetą ar pripažinti klaidą.</p>
+<p><strong>Kaip išvengti:</strong> Būk atviras pokyčiams. Pripažink, kad ne visi sprendimai bus teisingi iš pirmo karto, ir būk pasiruošęs juos koreguoti, kai gauni naują informaciją ar grįžtamąjį ryšį.</p>
+<p>Perėjimas nuo programuotojo prie architekto yra sudėtingas, bet įdomus kelias. Jis reikalauja ne tik naujų techninių žinių, bet ir naujo mąstymo būdo, naujų įgūdžių ir naujo požiūrio į problemas. Tačiau šis perėjimas taip pat atveria naujas galimybes ir leidžia daryti didesnį poveikį kuriant sistemas, kurios ne tik veikia, bet ir yra aiškios, lanksčios ir ilgaamžės.</p>
