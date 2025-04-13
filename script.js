@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Funkcija skyriaus turiniui įkelti
     function loadSkyrius(skyriusNum) {
         const turinysDiv = document.getElementById('turinys');
-        fetch(`skyriuss/skyrius${skyriusNum}.html`)
+        fetch(`skyrius/skyrius${skyriusNum}.html`)
             .then(response => response.text())
             .then(html => {
                 turinysDiv.innerHTML = `<div id="skyrius${skyriusNum}" class="skyrius">
