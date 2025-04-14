@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema po žmogaus - Dokumentacija</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    /* Additional styles for documentation page */
+    .docs-container {
+      display: flex;
+      min-height: calc(100vh - 70px);
+    }
+    
+    .docs-sidebar {
+      width: 280px;
+      padding: var(--spacing-md);
+      background-color: var(--color-background-surface);
+      border-right: 1px solid var(--color-primary-lightest);
+      position: sticky;
+      top: 70px;
+      height: calc(100vh - 70px);
+      overflow-y: auto;
+    }
+    
+    .docs-content {
+      flex: 1;
+      padding: var(--spacing-md) var(--spacing-lg);
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .docs-nav-section {
+      margin-bottom: var(--spacing-md);
+    }
+    
+    .docs-nav-title {
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--color-primary-darkest);
+      margin-bottom: var(--spacing-xs);
+      padding-bottom: var(--spacing-xs);
+      border-bottom: 1px solid var(--color-primary-lightest);
+    }
+    
+    .docs-nav-items {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .docs-nav-item {
+      margin-bottom: 2px;
+    }
+    
+    .docs-nav-link {
+      display: block;
+      padding: 6px 8px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      color: var(--color-primary);
+      border-left: 2px solid transparent;
+      transition: all 0.2s;
+    }
+    
+    .docs-nav-link:hover {
+      color: var(--color-accent);
+      text-decoration: none;
+      background-color: rgba(90, 103, 216, 0.05);
+    }
+    
+    .docs-nav-link.active {
+      color: var(--color-accent);
+      border-left-color: var(--color-accent);
+      background-color: rgba(90, 103, 216, 0.05);
+      font-weight: 500;
+    }
+    
+    .docs-pagination {
+      display: flex;
+      justify-content: space-between;
+      margin-top: var(--spacing-xl);
+      padding-top: var(--spacing-md);
+      border-top: 1px solid var(--color-primary-lightest);
+    }
+    
+    .docs-pagination-link {
+      display: flex;
+      flex-direction: column;
+      max-width: 45%;
+    }
+    
+    .docs-pagination-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.8rem;
+      color: var(--color-primary);
+      margin-bottom: 4px;
+    }
+    
+    .docs-pagination-title {
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      color: var(--color-primary-darkest);
+    }
+    
+    .docs-content h1 {
+      font-size: 2.5rem;
+      margin-bottom: var(--spacing-lg);
+      padding-bottom: var(--spacing-sm);
+      border-bottom: 1px solid var(--color-primary-lightest);
+    }
+    
+    .docs-content h2 {
+      font-size: 1.8rem;
+      margin-top: var(--spacing-xl);
+      margin-bottom: var(--spacing-md);
+    }
+    
+    .docs-content h3 {
+      font-size: 1.4rem;
+      margin-top: var(--spacing-lg);
+      margin-bottom: var(--spacing-sm);
+    }
+    
+    .docs-content blockquote {
+      border-left: 4px solid var(--color-accent);
+      padding: var(--spacing-sm) var(--spacing-md);
+      margin: var(--spacing-md) 0;
+      background-color: var(--color-background-surface);
+      font-style: italic;
+    }
+    
+    .docs-content code {
+      font-family: monospace;
+      background-color: var(--color-background-muted);
+      padding: 2px 4px;
+      border-radius: 3px;
+      font-size: 0.9em;
+    }
+    
+    .docs-content pre {
+      background-color: var(--color-background-muted);
+      padding: var(--spacing-md);
+      border-radius: 4px;
+      overflow-x: auto;
+      margin: var(--spacing-md) 0;
+      border-left: 4px solid var(--color-accent);
+    }
+    
+    .docs-content pre code {
+      background-color: transparent;
+      padding: 0;
+      border-radius: 0;
+    }
+    
+    @media (max-width: 768px) {
+      .docs-container {
+        flex-direction: column;
+      }
+      
+      .docs-sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 0;
+        border-right: none;
+        border-bottom: 1px solid var(--color-primary-lightest);
+      }
+      
+      .docs-content {
+        padding: var(--spacing-md);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar__inner">
+      <div class="navbar__logo">
+        <a href="/" class="navbar__brand">Sistema po žmogaus</a>
+      </div>
+      <nav class="navbar__menu">
+        <a href="/docs" class="navbar__item navbar__item--active">Knyga</a>
+        <a href="https://github.com/Admin-LT/cf-admin-lt" class="navbar__item">GitHub</a>
+        <button class="theme-toggle" aria-label="Perjungti tarp šviesios ir tamsios temos">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="docs-container">
+    <aside class="docs-sidebar">
+      <div class="docs-nav-section">
+        <div class="docs-nav-title">Sistema po žmogaus</div>
+        <ul class="docs-nav-items">
+          <li class="docs-nav-item">
+            <a href="/docs" class="docs-nav-link active">Pradžia</a>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="docs-nav-section">
+        <div class="docs-nav-title">Aiškumo pagrindai</div>
+        <ul class="docs-nav-items">
+          <li class="docs-nav-item">
+            <a href="/docs/ivadas-kodėl-mums-reikia-aiskumo" class="docs-nav-link">1. Įvadas: Kodėl mums reikia aiškumo</a>
+          </li>
+          <li class="docs-nav-item">
+            <a href="/docs/apie-aiskumo-architekta-saint-archetipas" class="docs-nav-link">2. Apie aiškumo architektą: Saint archetipas</a>
+          </li>
+          <li class="docs-nav-item">
+            <a href="/docs/perejimas-nuo-programuotojo-prie-architekto" class="docs-nav-link">3. Perėjimas nuo programuotojo prie architekto</a>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="docs-nav-section">
+        <div class="docs-nav-title">Sistemos pamatai</div>
+        <ul class="docs-nav-items">
+          <li class="docs-nav-item">
+            <a href="/docs/domeno-aiskumas" class="docs-nav-link">4. Domeno aiškumas</a>
+          </li>
+          <li class="docs-nav-item">
+            <a href="/docs/kompleksiskumo-anatomija" class="docs-nav-link">5. Kompleksiškumo anatomija</a>
+          </li>
+          <li class="docs-nav-item">
+            <a href="/docs/architekturos-esme-erdve-pokyciui" class="docs-nav-link">6. Architektūros esmė: erdvė pokyčiui</a>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="docs-nav-section">
+        <div class="docs-nav-title">Augimas ir skalė</div>
+        <ul class="docs-nav-items">
+          <li class="docs-nav-item">
+            <a href="/docs/skales-ir-augimo-paradoksas" class="docs-nav-link">7. Skalės ir augimo paradoksas</a>
+          </li>
+          <li class="docs-nav-item">
+            <a href="/docs/technines-skolos-valdymas" class="docs-nav-link">8. Techninės skolos valdymas</a>
+          </li>
+          <li class="docs-nav-item">
+            <a href="/docs/evoliucija-vs-revoliucija" class="docs-nav-link">9. Evoliucija vs. revoliucija</a>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="docs-nav-section">
+        <div class="docs-nav-title">Sistemos gyvavimo ciklas</div>
+        <ul class="docs-nav-items">
+          <li class="docs-nav-item">
+            <a href="/docs/nezinojimo-ir-sekmes-paradoksas" class="docs-nav-link">10. Nežinojimo ir sėkmės paradoksas</a>
+          </li>
+          <li class="docs-nav-item">
+            <a href="/docs/sistemos-kurios-pergyvena-kurejus" class="docs-nav-link">11. Sistemos, kurios pergyvena kūrėjus</a>
+          </li>
+          <li class="docs-nav-item">
+            <a href="/docs/zinomi-gedimai-skaidrumas-vs-aiskumas" class="docs-nav-link">12. Žinomi gedimai: skaidrumas vs. aiškumas</a>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="docs-nav-section">
+        <div class="docs-nav-title">Architektūros praktika</div>
+        <ul class="docs-nav-items">
+          <li class="docs-nav-item">
+            <a href="/docs/isvados-architektura-kaip-menas-ir-mokslas" class="docs-nav-link">13. Išvados: Architektūra kaip menas ir mokslas</a>
+          </li>
+          <li class="docs-nav-item">
+            <a href="/docs/priedai-praktiniai-irankiai-ir-metodai" class="docs-nav-link">14. Priedai: Praktiniai įrankiai ir metodai</a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    
+    <main class="docs-content">
+      <h1>Sistema po žmogaus</h1>
+      
+      <p>Sveiki atvykę į knygą "Sistema po žmogaus" - vadovą apie sistemų aiškumą ir architektūrą.</p>
+      
+      <p>Ši knyga skirta inžinieriams, architektams ir visiems, kas kuria ne tik kodą, bet ir sistemas, kurios turi išlikti. Kai kalbame apie sistemas, mums trūksta ne įrankių ar resursų – mums trūksta aiškumo. Aiškumo, kuris leidžia struktūroms išgyventi ilgiau nei jų kūrėjai.</p>
+      
+      <h2>Apie šią knygą</h2>
+      
+      <p>Šiuolaikinėje programinės įrangos kūrimo kultūroje dominuoja greitis ir funkcionalumas. Mes skubame pristatyti naujas funkcijas, integruoti naujausias technologijas, optimizuoti veikimą. Tačiau dažnai pamirštame, kad sistema, kuri veikia šiandien, nebūtinai bus suprantama ir palaikoma rytoj.</p>
+      
+      <p>Kai programuotojas palieka projektą, ar jo kodas lieka suprantamas? Kai verslo reikalavimai keičiasi, ar sistema gali prisitaikyti be didžiulių pertvarkymų? Aiškumas sistemose nėra prabanga ar papildomas privalumas – tai būtina sąlyga ilgalaikei sėkmei.</p>
+      
+      <h2>Knygos struktūra</h2>
+      
+      <p>Knyga suskirstyta į penkias pagrindines dalis:</p>
+      
+      <h3>Aiškumo pagrindai</h3>
+      <p>Kas yra tikrasis aiškumas sistemose ir kodėl jis svarbus. Saint archetipas ir perėjimas nuo programuotojo prie architekto mąstymo.</p>
+      
+      <h3>Sistemos pamatai</h3>
+      <p>Domeno aiškumo svarba, kompleksiškumo anatomija ir architektūros esmė kaip erdvė pokyčiui.</p>
+      
+      <h3>Augimas ir skalė</h3>
+      <p>Kaip sistemos auga be griūties, kaip valdyti techninę skolą ir kada rinktis evoliuciją, o kada revoliuciją.</p>
+      
+      <h3>Sistemos gyvavimo ciklas</h3>
+      <p>Nežinojimo ir sėkmės paradoksas, sistemos, kurios pergyvena kūrėjus, žinomi gedimai ir skaidrumo bei aiškumo santykis.</p>
+      
+      <h3>Architektūros praktika</h3>
+      <p>Architektūra kaip menas ir mokslas, praktiniai įrankiai ir metodai kasdieniam darbui.</p>
+      
+      <div class="docs-pagination">
+        <div></div>
+        <a href="/docs/ivadas-kodėl-mums-reikia-aiskumo" class="docs-pagination-link">
+          <span class="docs-pagination-label">Kitas</span>
+          <span class="docs-pagination-title">1. Įvadas: Kodėl mums reikia aiškumo</span>
+        </a>
+      </div>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__copyright">
+        © 2025 Sistema po žmogaus
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
