@@ -5,9 +5,7 @@ sidebar_position: 1
 
 # Sistema po žmogaus
 
-# Sistema po žmogaus
-
-**Autorius:** Anonym
+**Autorius:** Internetai
 
 **Metai:** 2025
 
