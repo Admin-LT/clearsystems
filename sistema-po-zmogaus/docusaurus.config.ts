@@ -1,14 +1,14 @@
 module.exports = {
-  title: 'Sistema po žmogaus',
-  tagline: 'Knyga apie sistemų aiškumą ir architektūrą',
-  url: 'https://sistema-po-zmogaus.pages.dev',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'jūsų-github-vartotojas',
-  projectName: 'sistema-po-zmogaus',
-  
+  title: "Sistema po žmogaus",
+  tagline: "Knyga apie sistemų aiškumą ir architektūrą",
+  url: "https://admin.lt",
+  baseUrl: "/",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/favicon.ico",
+  organizationName: "Admin-LT",
+  projectName: "clearsystems",
+
   presets: [
     [
       '@docusaurus/preset-classic',
