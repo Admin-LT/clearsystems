@@ -15,7 +15,7 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/Admin-LT/clearsystems/edit/main/",
+          editUrl: "https://github.com/Admin-LT/clearsystems/knyga/edit/main/",
           routeBasePath: "docs",
           showLastUpdateTime: false,
           showLastUpdateAuthor: false,
