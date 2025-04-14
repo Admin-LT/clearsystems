@@ -300,12 +300,47 @@ img {
   padding: var(--spacing-xl) 0;
 }
 
+/* Grid layout (original multi-column) */
 .features__grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: var(--spacing-md);
 }
 
+/* Single column layout (new) */
+.features.single-column .features__list {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.feature-item {
+  background-color: var(--color-background-surface);
+  border: 1px solid var(--color-primary-lightest);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  transition: all 0.3s;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item h3 {
+  margin-top: 0;
+  font-weight: 600;
+  color: var(--color-primary-darkest);
+  margin-bottom: var(--spacing-sm);
+}
+
+.feature-item p {
+  margin-bottom: 0;
+  color: var(--color-primary-dark);
+}
+
+/* Original feature card (for backward compatibility) */
 .feature-card {
   background-color: var(--color-background-surface);
   border: 1px solid var(--color-primary-lightest);
