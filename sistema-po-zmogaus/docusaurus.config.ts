@@ -11,19 +11,19 @@ module.exports = {
 
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js') ,
-          editUrl: 'https://github.com/jūsų-github-vartotojas/sistema-po-zmogaus/edit/main/',
-          routeBasePath: 'docs',
+          sidebarPath: require.resolve("./sidebars.js"),
+          editUrl: "https://github.com/Admin-LT/clearsystems/edit/main/",
+          routeBasePath: "docs",
           showLastUpdateTime: false,
           showLastUpdateAuthor: false,
-          breadcrumbs: false,
+          breadcrumbs: true,
         },
         blog: false,
         theme: {
-          customCss: require.resolve('./src/css/custom.css') ,
+          customCss: require.resolve("./src/css/custom.css"),
         },
       },
     ],
@@ -31,35 +31,34 @@ module.exports = {
 
   themeConfig: {
     colorMode: {
-      defaultMode: 'light',
+      defaultMode: "light",
       disableSwitch: false,
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Sistema po žmogaus',
+      title: "Sistema po žmogaus",
       hideOnScroll: false,
       logo: {
-        alt: 'Knygos logotipas',
-        src: 'img/logo.svg',
+        alt: "Knygos logotipas",
+        src: "img/logo.svg",
       },
       items: [
         {
-          to: '/docs',
-          label: 'Knyga',
-          position: 'left',
+          to: "/docs",
+          label: "Knyga",
+          position: "left",
         },
         {
-          href: 'https://github.com/jūsų-github-vartotojas/sistema-po-zmogaus',
-          label: 'GitHub',
-          position: 'right',
+          href: "https://github.com/Admin-LT/clearsystems",
+          label: "GitHub",
+          position: "right",
         },
       ],
     },
     footer: {
-      style: 'light',
+      style: "light",
       links: [],
-      copyright: `© ${new Date() .getFullYear()} Sistema po žmogaus`,
+      copyright: `© ${new Date().getFullYear()} Sistema po žmogaus`,
     },
   },
 };
-
