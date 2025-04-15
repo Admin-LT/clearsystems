@@ -17,7 +17,7 @@ export default function Comments() {
       emitMetadata="0"
       inputPosition="top"
       theme={colorMode}
-      origins=["https://admin.lt"]
+      crossorigin="anonymous"
       lang="lt"
       loading="lazy"
     />
