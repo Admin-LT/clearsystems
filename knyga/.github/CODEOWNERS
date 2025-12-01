@@ -1,0 +1,5 @@
+# Code owners ensure reviews from the right people/teams.
+# Update handles below as appropriate.
+* @Admin-LT/maintainers
+/.github/ @Admin-LT/maintainers
+/knyga/ @Admin-LT/maintainers
